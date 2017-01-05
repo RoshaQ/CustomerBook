@@ -11,11 +11,11 @@ import pl.spring.demo.constants.ViewNames;
 public class HomeController {
 	
 	private static final String INFO_TEXT = "Baza danych klientow";
-	private static final String WELCOME = "Witaj na stronie";
+	private static final String WELCOME_TEXT = "Witaj na stronie";
 	
 	@RequestMapping("/")
 	public final String homePage(final Model model){
-		model.addAttribute(ModelConstans.GREETING, WELCOME);
+		model.addAttribute(ModelConstans.GREETING, WELCOME_TEXT);
 		model.addAttribute(ModelConstans.INFO,INFO_TEXT);
 		return ViewNames.WELCOME;
 	}
